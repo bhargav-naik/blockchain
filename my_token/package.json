@@ -1,0 +1,17 @@
+{
+  "name": "my_token",
+  "version": "1.0.0",
+  "description": "my_token",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bhargav.naik",
+  "license": "ISC",
+  "devDependencies": {
+    "openzeppelin-solidity": "^4.5.0"
+  }
+}
