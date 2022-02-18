@@ -1,12 +1,12 @@
-pragma solidity 0.8.11
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.11;
 
-contract MyToken {
+import "@openzeppelin/contracts/token/ERC20";
 
-    string private name;
-    string private symbol;
-	
-	constructor(string memory _name, string memory _symbol) {
-        name = _name;
-        symbol = _symbol;
+contract MyToken is ERC20 {
+
+    constructor(uint256 _supply) ERC20("MyToken", "MTK") {
+        _mint(msg.sender, _supply * (10 ** decimals()));
     }
+
 }
